@@ -46,7 +46,7 @@ public class ProcessXmlData {
 				Weather weatherResult = new Weather();
 				JSONObject jsonObject = new JSONObject();
 				jsonObject = getResponseApi.getJsonWeather(emp.toString());
-				weatherResult = createWeatherFromJson(jsonObject);
+				weatherResult = getResponseApi.createWeatherFromJson(jsonObject);
 				emp.setWeather(weatherResult);
 				orders.getOrders().add(emp);
 
@@ -62,46 +62,6 @@ public class ProcessXmlData {
 		
 	}
 
-	public static Weather createWeatherFromJson(JSONObject jsonObject) {
-		Weather weatherResult = new Weather();
 
-		try {
-			String weatherDescriptions = String
-					.valueOf(jsonObject.getJSONObject("current").getJSONArray("weather_descriptions").get(0));
-			weatherResult.setWeatherDescriptions(weatherDescriptions);
-			String windDegree = String.valueOf(jsonObject.getJSONObject("current").getInt("wind_degree"));
-			weatherResult.setWindDegree(windDegree);
-			String visibility = String.valueOf(jsonObject.getJSONObject("current").getInt("visibility"));
-			weatherResult.setVisibility(visibility);
-			String feelslike = String.valueOf(jsonObject.getJSONObject("current").getInt("feelslike"));
-			weatherResult.setFeelslike(feelslike);
-			String windDir = String.valueOf(jsonObject.getJSONObject("current").getString("wind_dir"));
-			weatherResult.setWindDir(windDir);
-			String pressure = String.valueOf(jsonObject.getJSONObject("current").getInt("pressure"));
-			weatherResult.setPressure(pressure);
-			String cloudcover = String.valueOf(jsonObject.getJSONObject("current").getInt("cloudcover"));
-			weatherResult.setCloudcover(cloudcover);
-			String precip = String.valueOf(jsonObject.getJSONObject("current").getInt("precip"));
-			weatherResult.setPrecip(precip);
-			String uvIndex = String.valueOf(jsonObject.getJSONObject("current").getInt("uv_index"));
-			weatherResult.setUvIndex(uvIndex);
-			String temperature = String.valueOf(jsonObject.getJSONObject("current").getInt("temperature"));
-			weatherResult.setTemperature(temperature);
-			String humidity = String.valueOf(jsonObject.getJSONObject("current").getInt("humidity"));
-			weatherResult.setHumidity(humidity);
-			String windSpeed = String.valueOf(jsonObject.getJSONObject("current").getInt("wind_speed"));
-			weatherResult.setWindSpeed(windSpeed);
-			String weatherCode = String.valueOf(jsonObject.getJSONObject("current").getInt("weather_code"));
-			weatherResult.setWeatherCode(weatherCode);
-			String weatherIcons = String
-					.valueOf(jsonObject.getJSONObject("current").getJSONArray("weather_icons").get(0));
-			weatherResult.setWeatherIcons(weatherIcons);
-		} catch (JSONException e) {
-			System.out.println("on ne peut pas lire le json");
-		}
-
-		return weatherResult;
-
-	}
 
 }
