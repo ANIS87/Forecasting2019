@@ -1,0 +1,8 @@
+com/mycompany/app/App.class
+com/mycompany/utils/WriteInXml.class
+com/mycompany/app/GetResponseApi.class
+com/mycompany/model/Weather.class
+com/mycompany/model/Order.class
+com/mycompany/utils/MyHandler.class
+com/mycompany/model/Orders.class
+com/mycompany/utils/ParseXmlFile.class
