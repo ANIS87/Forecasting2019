@@ -66,7 +66,10 @@ Le  module python permet de tester des algorithmes de Machine Leraning.
 
 Il consiste à  lire un fichier CSV pour générer un  data frame. Ce dernier est utilisé ensuite pour faire des statistiques. J’ai utilisé les libs pandas, numpy pour  transformer le fichier csv en datframe.
 
-Pour développer un modèle prédictif des ventes, j’ai utilisé l’algorithme SARIMA. Cet algorithme est  recommandé pour traiter les problèmes du genre série chronologique  (time series forecasting). 
+Pour développer un modèle prédictif des ventes, j’ai utilisé l’algorithme SARIMA [0,1,2]
+
+
+Cet algorithme est  recommandé pour traiter les problèmes du genre série chronologique  (time series forecasting). 
 
 L’algorithme consiste à entraîner un modèle statistique à prédire une sortie y(t), qui varient en fonction du temps, en se basant sur une base d’apprentissage  collectée à partir des observations réelles.  
 
@@ -97,5 +100,11 @@ A titre d'exemple, la figure ci-dessous présente le résultat obtenu suite à u
                
  ![alt text](https://github.com/ANIS87/Forecasting2019/blob/master/scripts_python_IA_Pizza_forecastin/images/result_foredastin_from_2016-10-15_01_00_00_to_2016-10-25_01_00_00.png)      
     
+# Références
+   
+    https://machinelearningmastery.com/sarima-for-time-series-forecasting-in-python/
 
-
+    https://www.statsmodels.org/dev/examples/notebooks/generated/statespace_sarimax_stata.html#
+    
+    https://towardsdatascience.com/time-series-forecasting-arima-models-7f221e9eee06
+    
