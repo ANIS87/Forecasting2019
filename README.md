@@ -10,7 +10,7 @@ Sur le dépôt github, veullez trouver deux projets:
     
     scripts_python_IA_Pizza_forecastin : projet python.
 #  Weather_orders_java_maven
-# collecte de donnes
+
 Le module Weather_orders_java_maven est développé en  JAVA8 et MAVEN. Il est utilisé pour collecter et analyser les données fournies par les fichiers XML et l’api Weatherstack.
 
 L’architecture de la solution proposée est ci-dessous
