@@ -99,12 +99,15 @@ Pour analyser la pertinence d'apprentissage, nous avons testé le modèle entra�
 A titre d'exemple, la figure ci-dessous présente le résultat obtenu suite à une comparaison des observations et prédictions obtenues entre 2016/10/15 et 2016/10/25:
                
  ![alt text](https://github.com/ANIS87/Forecasting2019/blob/master/scripts_python_IA_Pizza_forecastin/images/result_foredastin_from_2016-10-15_01_00_00_to_2016-10-25_01_00_00.png)      
-    
+
+
+
+
 # Références
    
-    https://machinelearningmastery.com/sarima-for-time-series-forecasting-in-python/
+    [0]:https://machinelearningmastery.com/sarima-for-time-series-forecasting-in-python/
 
-    https://www.statsmodels.org/dev/examples/notebooks/generated/statespace_sarimax_stata.html#
+    [1]:https://www.statsmodels.org/dev/examples/notebooks/generated/statespace_sarimax_stata.html#
     
-    https://towardsdatascience.com/time-series-forecasting-arima-models-7f221e9eee06
+    [2]:https://towardsdatascience.com/time-series-forecasting-arima-models-7f221e9eee06
     
