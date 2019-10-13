@@ -10,7 +10,7 @@ Sur le dépôt github, veullez trouver deux projets:
     
     scripts_python_IA_Pizza_forecastin : projet python.
 #  Weather_orders_java_maven
-
+# collecte de donnes
 Le module Weather_orders_java_maven est développé en  JAVA8 et MAVEN. Il est utilisé pour collecter et analyser les données fournies par les fichiers XML et l’api Weatherstack.
 
 L’architecture de la solution proposée est ci-dessous
@@ -20,10 +20,11 @@ L’architecture de la solution proposée est ci-dessous
 
 Il permet de  lire  un fichier xml (ordres.xml)  et créer des objets java dont  les  métadonnées sont fournis par le fichier d'entrée.  Les modèles  de données utilisés dans ce module sont conçus à partir  de la structure des données fournie par le fichier d’entrée (schéma xml). 
 
-```diff
-+Le filtrage des données (<b style='color:red'> suppression des informations personnelles PII</b>)  se fait dans la phase de conception des modèles.
--<b style='color:red'>Il faut choisir les attributs dont l’utilisateur a besoin!</b> 
-```
+
+Le filtrage des données (<b style='color:red'> suppression des informations personnelles PII</b>)  se fait dans la phase de conception des modèles.
+
+<b style='color:red'>Il faut choisir les attributs dont l’utilisateur a besoin!</b> 
+
  Ensuite, le module fait appel à une api externe avec le protocole HTTP pour enrichir les données d’entrées ( récupération des informations concernant le météo). 
 
 La requête permettant de communiquer avec l’API prend en entrée,
