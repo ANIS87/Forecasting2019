@@ -20,9 +20,10 @@ L’architecture de la solution proposée est ci-dessous
 
 Il permet de  lire  un fichier xml (ordres.xml)  et créer des objets java dont  les  métadonnées sont fournis par le fichier d'entrée.  Les modèles  de données utilisés dans ce module sont conçus à partir  de la structure des données fournie par le fichier d’entrée (schéma xml). 
 
-Le filtrage des données (<b style='color:red'> suppression des informations personnelles PII</b>)  se fait dans la phase de conception des modèles.
-<b style='color:red'>Il faut choisir les attributs dont l’utilisateur a besoin!</b> 
-
+```diff
++Le filtrage des données (<b style='color:red'> suppression des informations personnelles PII</b>)  se fait dans la phase de conception des modèles.
+-<b style='color:red'>Il faut choisir les attributs dont l’utilisateur a besoin!</b> 
+```
  Ensuite, le module fait appel à une api externe avec le protocole HTTP pour enrichir les données d’entrées ( récupération des informations concernant le météo). 
 
 La requête permettant de communiquer avec l’API prend en entrée,
