@@ -2,7 +2,7 @@
 
 Ce document présente les démarches techniques suivies dans la conception des applications utilisées pour répondre aux problématiques  annoncées dans les questions d’entretien. 
 
-Dans ce projet, j’ai développé deux modules en java8 et python, dont les codes sources sont disponibles sur github :https://github.com/ANIS87/Forecasting2019
+Dans ce projet, j’ai développé deux modules en java8 et python.
 
 Sur le dépôt github, veullez trouver deux projets:
 
@@ -64,12 +64,9 @@ Pour lancer le module, il faut installer python (version 3) et les libs pandas (
     
  Le fichier main.py permet de lire les données csv à partir de dossier data (data/pizzeria_tania_data_simplified.csv) pour créer un dataframe pandas. ce dataframe sera ensuite injecté dans le modèle statistique SARIMAS pour générer le modèle prédictif final.
  
-Ce modèle entraîné est utilisé par la suite pour tester sa  pertinence sur des données réelles.
+Pour analyser la pertinence d'apprentissage, nous avons testé le modèle entraîné sur des données réelles.Les résultats obtenus sont disponibles dans le dossier images. Chaque image présente présente une comparaison entre les observations réelles et  celles obtenues entre deux dates données.
 
-Les résultats obtenus sont disponibles dans le dossier images.
-
-A titre d’exemple, la figure ci-dessous présente une comparaison entre les observations réelles et  celles obtenues entre les deux dates 2016/10/15 et 2016/10/25:
-
+A titre d'exemple, la figure ci-dessous présente le résultat obtenu suite à une comparaison des observations et prédictions obtenues entre 2016/10/15 et 2016/10/25:
                
  ![alt text](https://github.com/ANIS87/Forecasting2019/blob/master/scripts_python_IA_Pizza_forecastin/images/result_foredastin_from_2016-10-15_01_00_00_to_2016-10-25_01_00_00.png)      
     
